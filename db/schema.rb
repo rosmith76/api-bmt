@@ -11,10 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160327214720) do
+ActiveRecord::Schema.define(version: 20161105172410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "bikes", force: :cascade do |t|
+    t.string   "name"
+    t.date     "date_of_purchase"
+    t.string   "make"
+    t.string   "frame"
+    t.string   "fork"
+    t.string   "fork_service"
+    t.string   "brakes"
+    t.date     "brake_bleed"
+    t.date     "pad_replaced"
+    t.string   "rotors"
+    t.string   "wheels"
+    t.string   "tires"
+    t.date     "sealant"
+    t.string   "shifters"
+    t.string   "front_derailleur"
+    t.string   "rear_derailleur"
+    t.string   "cassette"
+    t.string   "chain"
+    t.string   "cranks"
+    t.string   "bottom_bracket"
+    t.string   "saddle"
+    t.string   "seatpost"
+    t.string   "stem"
+    t.string   "handlebars"
+    t.string   "grips"
+    t.string   "headset"
+    t.string   "notes"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "examples", force: :cascade do |t|
     t.text     "text",       null: false

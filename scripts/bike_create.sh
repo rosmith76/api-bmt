@@ -1,9 +1,9 @@
 curl --include --request POST http://localhost:4741/bikes \
-  --header "Authorization: Token token=BAhJIiU5ZDg2ZGRkODJjMTI5MzAyYWY3MmFkOTA0OTlhNmJiNAY6BkVG--2b17de6cc9c60bee39388890c1ca83cc67e4d46e" \
+  --header "Authorization: Token token=BAhJIiVkZjM5YWUxNjI1MTlmNTdiM2Q4NmI4NDQxNzU4MmQ3OAY6BkVG--7233accd8ce13aff93a193d834be82b00b0e8b6e" \
   --header "Content-Type: application/json" \
   --data '{
     "bike": {
-      "name": "Robbes Bike 3",
+      "name": "Example Squishy Bike",
       "date_of_purchase": "2016-03-21",
       "make": "Rocky Mountain",
       "frame": "Instinct 999",

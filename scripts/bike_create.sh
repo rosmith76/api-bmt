@@ -1,9 +1,9 @@
 curl --include --request POST http://localhost:4741/bikes \
-  --header "Authorization: Token token=BAhJIiU3ZjNmOWMxYmM1MDNmYTQ1MjYzNTg2NGE1NGJjNmM5MQY6BkVG--ea861ab8a213ba2e7179838dec97559592cd1bb3" \
+  --header "Authorization: Token token=BAhJIiVkZjM5YWUxNjI1MTlmNTdiM2Q4NmI4NDQxNzU4MmQ3OAY6BkVG--7233accd8ce13aff93a193d834be82b00b0e8b6e" \
   --header "Content-Type: application/json" \
   --data '{
     "bike": {
-      "name": "Dragon Slayer",
+      "name": "Example Squishy Bike",
       "date_of_purchase": "2016-03-21",
       "make": "Rocky Mountain",
       "frame": "Instinct 999",

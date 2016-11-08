@@ -1,12 +1,14 @@
-class BikesController < ApplicationController
+class BikesController < ProtectedController
   before_action :set_bike, only: [:show, :update, :destroy]
 
   # GET /bikes
   # GET /bikes.json
   def index
-    @bikes = Bike.all
-
+    # @bikes = Bike.all
+    @bikes = Bike.where("user_id=#{current_user.id}")
     render json: @bikes
+
+    # render json: @bikes
   end
 
   # GET /bikes/1
@@ -18,7 +20,8 @@ class BikesController < ApplicationController
   # POST /bikes
   # POST /bikes.json
   def create
-    @bike = Bike.new(bike_params)
+    # @bike = Bike.new(bike_params)
+    @bike = current_user.bikes.build(bike_params)
 
     if @bike.save
       render json: @bike, status: :created, location: @bike
@@ -50,7 +53,8 @@ class BikesController < ApplicationController
   private
 
   def set_bike
-    @bike = Bike.find(params[:id])
+    # @bike = Bike.find(params[:id])
+    @bike = current_user.bikes.find(params[:id])
   end
 
   def bike_params

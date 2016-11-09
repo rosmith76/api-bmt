@@ -1,2 +1,2 @@
 curl --include --request GET http://localhost:4741/bikes \
-  --header "Authorization: Token token=BAhJIiVkZjM5YWUxNjI1MTlmNTdiM2Q4NmI4NDQxNzU4MmQ3OAY6BkVG--7233accd8ce13aff93a193d834be82b00b0e8b6e"
+  --header "Authorization: Token token=BAhJIiVjNDI5MmM3ZGQyNzc2MmYwZjc5YzY0MTM1OGVkYzRhYQY6BkVG--c3d52019eb0174132c3a013f7f64b72240e7141f"
